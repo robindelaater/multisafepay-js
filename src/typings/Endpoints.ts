@@ -4,5 +4,5 @@ export enum Endpoints {
   ISSUERS = 'issuers',
   REFUNDS = 'refunds',
   PAYMENT_METHODS = 'payment-methods',
-  TOKENS = 'recurring'
+  TOKENS = 'recurring',
 }

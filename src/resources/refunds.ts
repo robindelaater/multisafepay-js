@@ -8,7 +8,7 @@ export default class Refunds {
   pluginInfo = {
     shop: 'node-wrapper',
     plugin_version: '1.1.1',
-    partner: 'Robin de Laater'
+    partner: 'Robin de Laater',
   };
 
   constructor(client: AxiosInstance) {
@@ -19,7 +19,7 @@ export default class Refunds {
     try {
       const response = await this.client.post(`/orders/${order_id}/refunds`, {
         ...data,
-        ...this.pluginInfo
+        ...this.pluginInfo,
       });
       return response.data;
     } catch (error) {

@@ -84,8 +84,8 @@ export default class MultiSafepayClient {
         baseURL: MultiSafepayClient.baseURL,
         headers: {
           api_key: this.apiKey,
-          'Content-Type': 'application/json; charset=UTF-8;'
-        }
+          'Content-Type': 'application/json; charset=UTF-8;',
+        },
       });
     } catch (error: any) {
       throw new Error(error);
