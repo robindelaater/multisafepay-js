@@ -5,7 +5,7 @@ Add the package into your JS project:
 
 Create the MultiSafepay client:
 
-```
+```JavaScript
 import { createClient } from '@robindelaater/multisafepay-js'
 
 const MultiSafepay = createClient('api-key', {environment: 'test'})
