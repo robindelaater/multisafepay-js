@@ -1,4 +1,5 @@
 import Resource from '../resource';
+import { pluginInfo } from './plugin-info';
 
 // Typings
 import { AxiosError, AxiosInstance } from 'axios';
