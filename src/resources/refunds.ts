@@ -1,15 +1,11 @@
 import Resource from '../resource';
+import { pluginInfo } from './plugin-info';
 
 // Typings
 import { AxiosInstance } from 'axios';
 
 export default class Refunds {
   client: AxiosInstance;
-  pluginInfo = {
-    shop: 'node-wrapper',
-    plugin_version: '1.1.1',
-    partner: 'Robin de Laater',
-  };
 
   constructor(client: AxiosInstance) {
     this.client = client;
@@ -19,7 +15,7 @@ export default class Refunds {
     try {
       const response = await this.client.post(`/orders/${order_id}/refunds`, {
         ...data,
-        ...this.pluginInfo,
+        ...pluginInfo,
       });
       return response.data;
     } catch (error) {
