@@ -30,7 +30,7 @@ export default abstract class Resource {
     try {
       const response = await this.client.post(this.endpoint, {
         ...data,
-        ...this.pluginInfo,
+        ...pluginInfo,
       });
 
       return response;

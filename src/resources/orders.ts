@@ -17,7 +17,7 @@ export default class Orders extends Resource {
         `${this.endpoint}/${id}/capture`,
         {
           ...data,
-          ...this.pluginInfo,
+          ...pluginInfo,
         }
       );
 
